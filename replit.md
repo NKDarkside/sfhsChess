@@ -9,6 +9,8 @@ This is a static website for the South Forsyth High School Chess Club. The websi
 - Updated advantage cards to "Mind Games", "Compete", "Community"
 - Meetings page restructured with hero section, gallery of past meetings, and FAQ section
 - Gallery includes placeholders for 8 specific image files from past meetings
+- Upcoming Meetings page restructured with hero section, specific meeting dates list, and FAQ section
+- Meeting dates list includes 5-game series events and special RSVP link for monthly meeting
 - Footer updated to "Don't Forget Your Club Permission Form! HERE" across all pages
 - All FAQ answers updated to match user's exact text specifications
 
