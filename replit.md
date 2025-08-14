@@ -2,6 +2,16 @@
 
 This is a static website for the South Forsyth High School Chess Club. The website serves as an informational hub for club members and prospective members, providing details about meetings, club activities, and general information about the organization. The site features a clean, modern design with a dark theme and chess-inspired visual elements.
 
+## Recent Changes (August 14, 2025)
+
+- Updated all pages to match user's exact text content and layout preferences
+- Modified hero sections across pages to use "Play. Learn. Compete." branding
+- Updated advantage cards to "Mind Games", "Compete", "Community"
+- Meetings page restructured with hero section, gallery of past meetings, and FAQ section
+- Gallery includes placeholders for 8 specific image files from past meetings
+- Footer updated to "Don't Forget Your Club Permission Form! HERE" across all pages
+- All FAQ answers updated to match user's exact text specifications
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
