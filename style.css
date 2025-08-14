@@ -1,10 +1,27 @@
 /* Custom CSS for South Forsyth High School Chess Club */
 
+/* Custom School Colors */
+:root {
+    --sfhs-navy: #2c4a6b;
+    --sfhs-light-navy: #4a6b8a;
+    --sfhs-white: #ffffff;
+    --sfhs-navy-rgb: 44, 74, 107;
+    --sfhs-light-navy-rgb: 74, 107, 138;
+}
+
+/* Override Bootstrap primary colors with school colors */
+:root {
+    --bs-primary: var(--sfhs-navy);
+    --bs-primary-rgb: var(--sfhs-navy-rgb);
+    --bs-info: var(--sfhs-light-navy);
+    --bs-info-rgb: var(--sfhs-light-navy-rgb);
+}
+
 /* Navigation Styles */
 .navbar {
-    background-color: rgba(var(--bs-dark-rgb), 0.95) !important;
+    background-color: rgba(var(--sfhs-navy-rgb), 0.95) !important;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--bs-border-color);
+    border-bottom: 1px solid var(--sfhs-light-navy);
     transition: all 0.3s ease;
 }
 
@@ -19,7 +36,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--bs-primary) !important;
+    color: var(--sfhs-light-navy) !important;
 }
 
 /* Main Content Spacing */
@@ -32,7 +49,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, rgba(var(--bs-primary-rgb), 0.1) 0%, rgba(var(--bs-info-rgb), 0.1) 100%);
+    background: linear-gradient(135deg, rgba(var(--sfhs-navy-rgb), 0.1) 0%, rgba(var(--sfhs-light-navy-rgb), 0.1) 100%);
     position: relative;
     overflow: hidden;
 }
@@ -68,7 +85,7 @@
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(var(--bs-primary-rgb), 0.15) !important;
+    box-shadow: 0 0.5rem 1rem rgba(var(--sfhs-navy-rgb), 0.15) !important;
 }
 
 /* Placeholder Images */
@@ -90,8 +107,8 @@
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: rgba(var(--bs-primary-rgb), 0.1);
-    border-color: var(--bs-primary);
+    background-color: rgba(var(--sfhs-navy-rgb), 0.1);
+    border-color: var(--sfhs-navy);
 }
 
 .accordion-body {
@@ -155,6 +172,7 @@ footer {
 }
 
 .card-header.bg-primary {
+    background-color: var(--sfhs-navy) !important;
     border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -189,7 +207,40 @@ html {
 .btn:focus,
 .nav-link:focus,
 .accordion-button:focus {
-    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(var(--sfhs-navy-rgb), 0.25);
+}
+
+/* School Color Utility Classes */
+.text-sfhs-navy {
+    color: var(--sfhs-navy) !important;
+}
+
+.text-sfhs-light-navy {
+    color: var(--sfhs-light-navy) !important;
+}
+
+.bg-sfhs-navy {
+    background-color: var(--sfhs-navy) !important;
+}
+
+.bg-sfhs-light-navy {
+    background-color: var(--sfhs-light-navy) !important;
+}
+
+.border-sfhs-navy {
+    border-color: var(--sfhs-navy) !important;
+}
+
+.btn-sfhs-navy {
+    background-color: var(--sfhs-navy);
+    border-color: var(--sfhs-navy);
+    color: white;
+}
+
+.btn-sfhs-navy:hover {
+    background-color: var(--sfhs-light-navy);
+    border-color: var(--sfhs-light-navy);
+    color: white;
 }
 
 /* Loading Animation for Future Use */
