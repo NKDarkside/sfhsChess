@@ -15,6 +15,10 @@ This is a static website for the South Forsyth High School Chess Club. The websi
 - All FAQ answers updated to match user's exact text specifications
 - Updated color scheme to use South Forsyth High School colors (light navy blue and white)
 - Modified all primary colors throughout the site to match school branding
+- Fixed JavaScript error with empty anchor links
+- Removed past meetings gallery from homepage (kept only on meetings page)
+- Updated RSVP link to point to Google Forms
+- Changed meetings page gallery title to "Past Meetings"
 
 # User Preferences
 
