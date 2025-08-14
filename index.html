@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Forsyth High School Chess Club</title>
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Optional Closing Banner -->
+    <div id="closingBanner" class="alert alert-info alert-dismissible fade show mb-0" role="alert">
+        <div class="container">
+            <i class="fas fa-info-circle me-2"></i>
+            Welcome to South Forsyth High School Chess Club! Join us for strategy, fun, and community.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-chess-king me-2"></i>
+                SF Chess Club
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="upcoming-meetings.html">Upcoming Meetings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meetings.html">Meetings</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-primary" href="about-us.html">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold mb-4">
+                        <span class="text-primary">Play. Learn. Compete.</span>
+                    </h1>
+                    <h2 class="display-5 fw-bold mb-4">South Forsyth High School Chess Club</h2>
+                    <p class="fs-5 mb-5 text-muted">
+                        Whether you're new to the game or a seasoned player, SFHS Chess Club offers a place to grow, compete, and belong.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="upcoming-meetings.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-calendar-alt me-2"></i>Join Next Meeting
+                        </a>
+                        <a href="about-us.html" class="btn btn-outline-secondary btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-chess-board">
+                        <i class="fas fa-chess fa-10x text-primary opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Why Chess?</h2>
+                    <p class="lead text-muted">Whether you're new to the game or a seasoned player, SFHS Chess Club offers a place to grow, compete, and belong.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="fas fa-brain fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title fw-bold">Mind Games</h4>
+                            <p class="card-text text-muted">
+                                Sharpen your strategic thinking, decision-making, and problem-solving skills, on and off the board.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="fas fa-smile fa-3x text-success"></i>
+                            </div>
+                            <h4 class="card-title fw-bold">Compete</h4>
+                            <p class="card-text text-muted">
+                                Put your skills to the test in friendly competitions and official tournaments with your peers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="fas fa-users fa-3x text-info"></i>
+                            </div>
+                            <h4 class="card-title fw-bold">Community</h4>
+                            <p class="card-text text-muted">
+                                Connect with fellow enthusiasts and build lasting friendships.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-5 bg-body-secondary">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Past Meetings Gallery</h2>
+                    <p class="lead text-muted">Memories from our chess club activities</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="placeholder-img d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
+                            <div class="text-center text-muted">
+                                <i class="fas fa-image fa-3x mb-2"></i>
+                                <p class="mb-0">Tournament Day</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Weekly Tournament</h5>
+                            <p class="card-text text-muted">Students competing in our weekly chess tournament.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="placeholder-img d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
+                            <div class="text-center text-muted">
+                                <i class="fas fa-image fa-3x mb-2"></i>
+                                <p class="mb-0">Learning Session</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Strategy Workshop</h5>
+                            <p class="card-text text-muted">Advanced players teaching opening strategies to beginners.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="placeholder-img d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
+                            <div class="text-center text-muted">
+                                <i class="fas fa-image fa-3x mb-2"></i>
+                                <p class="mb-0">Club Meeting</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Group Discussion</h5>
+                            <p class="card-text text-muted">Members discussing club activities and upcoming events.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-5">
+                        <h2 class="display-5 fw-bold mb-3">Club FAQs</h2>
+                        <p class="lead text-muted">Everything you need to know about joining our chess club</p>
+                    </div>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    When and where do you meet?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    All upcoming meetings can be found in the "Upcoming Meetings" tab.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Are there tournaments?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We have a variety of tournaments throughout the year, from casual in-club competitions to inter-school events.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can beginners join?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! We have experienced members who can help beginners learn the fundamentals and improve their game.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What are the requirements to join?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The club is open to all students from grades 9–12. No prior chess experience is necessary to join.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Do I need to bring my own chess set?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We have a collection of chess sets and clocks available for use during club meetings. Members are also welcome to bring their own equipment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    Do you have social events outside of chess?
+                                </button>
+                            </h3>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we organize social events and chess-themed activities outside of regular meetings to foster a strong community spirit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">
+                        <i class="fas fa-exclamation-triangle me-2 text-warning"></i>
+                        <strong>Don't Forget Your Club Permission Form!</strong>
+                        <a href="#" class="text-primary">HERE</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 text-muted">
+                        © 2024 South Forsyth High School Chess Club
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

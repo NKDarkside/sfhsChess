@@ -1,0 +1,225 @@
+/* Custom CSS for South Forsyth High School Chess Club */
+
+/* Navigation Styles */
+.navbar {
+    background-color: rgba(var(--bs-dark-rgb), 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--bs-border-color);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--bs-primary) !important;
+}
+
+/* Main Content Spacing */
+.main-content {
+    padding-top: 100px;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(var(--bs-primary-rgb), 0.1) 0%, rgba(var(--bs-info-rgb), 0.1) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="chess" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="rgba(255,255,255,0.02)"/><rect x="10" y="10" width="10" height="10" fill="rgba(255,255,255,0.02)"/></pattern></defs><rect width="100" height="100" fill="url(%23chess)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-chess-board {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Card Animations */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(var(--bs-primary-rgb), 0.15) !important;
+}
+
+/* Placeholder Images */
+.placeholder-img {
+    min-height: 200px;
+    background: linear-gradient(45deg, var(--bs-light), var(--bs-gray-200));
+    border-radius: var(--bs-border-radius);
+    transition: all 0.3s ease;
+}
+
+.placeholder-img:hover {
+    background: linear-gradient(45deg, var(--bs-gray-200), var(--bs-gray-300));
+}
+
+/* FAQ Accordion Enhancements */
+.accordion-button {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+    border-color: var(--bs-primary);
+}
+
+.accordion-body {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Button Enhancements */
+.btn {
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-lg {
+    padding: 0.75rem 2rem;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+footer {
+    border-top: 1px solid var(--bs-border-color);
+}
+
+/* Responsive Design Improvements */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.5rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Custom Badge Colors */
+.badge {
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+/* Enhanced Card Headers */
+.card-header {
+    border-bottom: 2px solid var(--bs-border-color);
+    font-weight: 600;
+}
+
+.card-header.bg-primary {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-header.bg-warning {
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Enhancements */
+.fa-chess, .fa-chess-king, .fa-chess-bishop, .fa-chess-pawn {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Meeting Cards Special Styling */
+.card-header .bg-success,
+.card-header .bg-info,
+.card-header .bg-warning,
+.card-header .bg-danger {
+    border-radius: var(--bs-border-radius);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus States for Accessibility */
+.btn:focus,
+.nav-link:focus,
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+/* Loading Animation for Future Use */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.loading {
+    animation: pulse 2s infinite;
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    footer,
+    .btn {
+        display: none !important;
+    }
+    
+    .main-content {
+        padding-top: 0;
+    }
+    
+    .hero-section {
+        min-height: auto;
+        background: none !important;
+    }
+}
