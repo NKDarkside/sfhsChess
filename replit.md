@@ -19,7 +19,7 @@ This is a static website for the South Forsyth High School Chess Club. The websi
 - Removed past meetings gallery from homepage (kept only on meetings page)
 - Updated RSVP link to point to Google Forms
 - Changed meetings page gallery title to "Past Meetings"
-- Updated navigation bar title from "SF Chess Club" to "SFHS Chess" across all pages
+- Updated navigation bar title from "SF Chess Club" to "SFHS Chess" across all pages and stuff
 
 # User Preferences
 
