@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeBannerDismiss();
     initializeTooltips();
     initializeAnimations();
+    initializeButtonTests();
     
     console.log('South Forsyth High School Chess Club website loaded successfully!');
 });
@@ -279,6 +280,62 @@ function enhanceAccessibility() {
 // Initialize accessibility enhancements
 document.addEventListener('DOMContentLoaded', enhanceAccessibility);
 
+// Button Test Function
+function initializeButtonTests() {
+    const buttons = document.querySelectorAll('.btn');
+    console.log('Found', buttons.length, 'buttons on the page');
+    
+    buttons.forEach((button, index) => {
+        console.log(`Button ${index + 1}:`, button.textContent.trim(), 'href:', button.href);
+        
+        // Add click event listener for testing
+        button.addEventListener('click', function(e) {
+            console.log('Button clicked:', this.textContent.trim(), 'href:', this.href);
+            
+            // Add visual feedback
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+        });
+        
+        // Add hover effects with more visible changes
+        button.addEventListener('mouseenter', function(e) {
+            console.log('Button hovered:', this.textContent.trim());
+            this.style.transform = 'translateY(-3px) scale(1.05)';
+            this.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.3)';
+            this.style.backgroundColor = '#4a6b8a';
+            this.style.color = 'white';
+        });
+        
+        button.addEventListener('mouseleave', function(e) {
+            console.log('Button unhovered:', this.textContent.trim());
+            this.style.transform = '';
+            this.style.boxShadow = '';
+            // Reset to original colors
+            if (this.classList.contains('btn-primary')) {
+                this.style.backgroundColor = '#2c4a6b';
+                this.style.color = 'white';
+            } else {
+                this.style.backgroundColor = 'transparent';
+                this.style.color = '#6c757d';
+            }
+        });
+        
+        // Add active state
+        button.addEventListener('mousedown', function(e) {
+            console.log('Button pressed:', this.textContent.trim());
+            this.style.transform = 'translateY(0) scale(0.98)';
+            this.style.backgroundColor = '#1a2f4a';
+        });
+        
+        button.addEventListener('mouseup', function(e) {
+            this.style.transform = 'translateY(-3px) scale(1.05)';
+            this.style.backgroundColor = '#4a6b8a';
+        });
+    });
+}
+
 // Export functions for potential future modules
 window.ChessClub = {
     initializeNavigation,
@@ -286,5 +343,6 @@ window.ChessClub = {
     enhanceFAQ,
     validateForm,
     saveToLocalStorage,
-    loadFromLocalStorage
+    loadFromLocalStorage,
+    initializeButtonTests
 };

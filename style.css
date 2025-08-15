@@ -100,6 +100,59 @@
     background: linear-gradient(45deg, var(--bs-gray-200), var(--bs-gray-300));
 }
 
+/* Button Interactive Styles */
+.btn {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    user-select: none;
+    transition: all 0.3s ease !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    background-color: var(--bs-primary) !important;
+    color: white !important;
+}
+
+.btn:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+    background-color: var(--bs-primary) !important;
+    color: white !important;
+}
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.25) !important;
+}
+
+/* Specific button styles for better interaction */
+.btn-primary {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--sfhs-light-navy) !important;
+    border-color: var(--sfhs-light-navy) !important;
+    transform: translateY(-2px) !important;
+}
+
+.btn-outline-secondary {
+    border-color: var(--bs-secondary) !important;
+    color: var(--bs-secondary) !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--bs-secondary) !important;
+    color: white !important;
+    transform: translateY(-2px) !important;
+}
+
 /* FAQ Accordion Enhancements */
 .accordion-button {
     font-weight: 600;
