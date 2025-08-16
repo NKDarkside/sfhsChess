@@ -2,7 +2,19 @@
 
 This is a static website for the South Forsyth High School Chess Club. The website serves as an informational hub for club members and prospective members, providing details about meetings, club activities, and general information about the organization. The site features a clean, modern design with a dark theme and chess-inspired visual elements.
 
-## Recent Changes (August 14, 2025)
+## Recent Changes (August 16, 2025)
+
+- **MAJOR DESIGN OVERHAUL**: Migrated from dark theme to light theme with SFHS school colors (blue, gold, white)
+- **Color Scheme Update**: Replaced navy/dark colors with friendly blue (#1e3a8a), gold (#f59e0b), and white color palette
+- **Enhanced Photo Galleries**: Added multiple photo gallery sections with 12+ placeholder spots for club photos
+- **Disclaimer Added**: Added official disclaimer that club is student-run and not affiliated with SFHS/Forsyth County Schools
+- **Navigation Redesign**: Updated navbar with gradient blue background, gold accent on hover, rounded buttons
+- **Button Styling**: Redesigned all buttons with rounded corners, gradients, and interactive hover effects
+- **Footer Enhancement**: Updated footer with gradient background, social media icons, and disclaimer
+- **Improved Contrast**: Switched to light theme with high contrast colors for better accessibility
+- **Welcome Banner**: Updated banner with gold gradient and friendly messaging
+
+## Previous Changes (August 14, 2025)
 
 - Updated all pages to match user's exact text content and layout preferences
 - Modified hero sections across pages to use "Play. Learn. Compete." branding
