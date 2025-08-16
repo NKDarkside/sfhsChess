@@ -1,27 +1,26 @@
 /* Custom CSS for South Forsyth High School Chess Club */
 
-/* SFHS School Colors - Blue, Gold, White */
+/* SFHS School Colors - Navy Blue and White */
 :root {
-    --sfhs-blue: #1e3a8a;
-    --sfhs-light-blue: #3b82f6;
-    --sfhs-gold: #f59e0b;
-    --sfhs-light-gold: #fbbf24;
+    --sfhs-navy: #1e3a8a;
+    --sfhs-light-navy: #2563eb;
+    --sfhs-dark-navy: #1e40af;
     --sfhs-white: #ffffff;
-    --sfhs-cream: #fef3c7;
+    --sfhs-light-blue: #dbeafe;
     --sfhs-dark-text: #1f2937;
     
-    --sfhs-blue-rgb: 30, 58, 138;
-    --sfhs-light-blue-rgb: 59, 130, 246;
-    --sfhs-gold-rgb: 245, 158, 11;
+    --sfhs-navy-rgb: 30, 58, 138;
+    --sfhs-light-navy-rgb: 37, 99, 235;
+    --sfhs-dark-navy-rgb: 30, 64, 175;
 }
 
-/* Override Bootstrap colors for friendlier, lighter theme */
+/* Override Bootstrap colors for navy and white theme */
 :root {
-    --bs-primary: var(--sfhs-blue);
-    --bs-primary-rgb: var(--sfhs-blue-rgb);
-    --bs-secondary: var(--sfhs-gold);
-    --bs-secondary-rgb: var(--sfhs-gold-rgb);
-    --bs-light: var(--sfhs-cream);
+    --bs-primary: var(--sfhs-navy);
+    --bs-primary-rgb: var(--sfhs-navy-rgb);
+    --bs-secondary: var(--sfhs-light-navy);
+    --bs-secondary-rgb: var(--sfhs-light-navy-rgb);
+    --bs-light: var(--sfhs-light-blue);
     --bs-body-bg: var(--sfhs-white);
     --bs-body-color: var(--sfhs-dark-text);
 }
@@ -35,9 +34,9 @@ body {
 
 /* Navigation Styles */
 .navbar {
-    background: linear-gradient(135deg, var(--sfhs-blue) 0%, var(--sfhs-light-blue) 100%) !important;
+    background: linear-gradient(135deg, var(--sfhs-navy) 0%, var(--sfhs-light-navy) 100%) !important;
     backdrop-filter: blur(10px);
-    border-bottom: 3px solid var(--sfhs-gold);
+    border-bottom: 3px solid var(--sfhs-light-navy);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
 }
@@ -58,14 +57,14 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    background-color: var(--sfhs-gold) !important;
-    color: var(--sfhs-dark-text) !important;
+    background-color: var(--sfhs-white) !important;
+    color: var(--sfhs-navy) !important;
     transform: translateY(-2px);
 }
 
 .navbar-nav .nav-link.active {
-    background-color: var(--sfhs-gold);
-    color: var(--sfhs-dark-text) !important;
+    background-color: var(--sfhs-white);
+    color: var(--sfhs-navy) !important;
 }
 
 /* Main Content Spacing */
@@ -78,7 +77,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, var(--sfhs-cream) 0%, var(--sfhs-white) 50%, var(--sfhs-cream) 100%);
+    background: linear-gradient(135deg, var(--sfhs-light-blue) 0%, var(--sfhs-white) 50%, var(--sfhs-light-blue) 100%);
     position: relative;
     overflow: hidden;
     padding: 50px 0;
@@ -91,7 +90,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="chess" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse"><rect width="15" height="15" fill="rgba(245,158,11,0.1)"/><rect x="15" y="15" width="15" height="15" fill="rgba(245,158,11,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23chess)"/></svg>');
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="chess" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse"><rect width="15" height="15" fill="rgba(30,58,138,0.1)"/><rect x="15" y="15" width="15" height="15" fill="rgba(30,58,138,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23chess)"/></svg>');
     opacity: 0.5;
 }
 
@@ -121,11 +120,11 @@ body {
 .card:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    border-color: var(--sfhs-gold);
+    border-color: var(--sfhs-light-navy);
 }
 
 .card-header {
-    background: linear-gradient(135deg, var(--sfhs-light-blue) 0%, var(--sfhs-blue) 100%) !important;
+    background: linear-gradient(135deg, var(--sfhs-light-navy) 0%, var(--sfhs-navy) 100%) !important;
     color: var(--sfhs-white) !important;
     font-weight: 600;
     border: none !important;
@@ -133,24 +132,24 @@ body {
 
 /* Photo Gallery Sections */
 .photo-gallery {
-    background: linear-gradient(135deg, var(--sfhs-cream) 0%, var(--sfhs-white) 100%);
+    background: linear-gradient(135deg, var(--sfhs-light-blue) 0%, var(--sfhs-white) 100%);
     border-radius: 20px;
     padding: 40px;
     margin: 30px 0;
-    border: 2px solid var(--sfhs-gold);
+    border: 2px solid var(--sfhs-light-navy);
 }
 
 .photo-gallery h3 {
-    color: var(--sfhs-blue);
+    color: var(--sfhs-navy);
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
 }
 
-/* Placeholder Images - More colorful */
+/* Placeholder Images - Navy and white theme */
 .placeholder-img {
     min-height: 250px;
-    background: linear-gradient(135deg, var(--sfhs-light-blue), var(--sfhs-gold));
+    background: linear-gradient(135deg, var(--sfhs-light-navy), var(--sfhs-navy));
     border-radius: 15px;
     transition: all 0.3s ease;
     position: relative;
@@ -177,7 +176,7 @@ body {
 
 .placeholder-img:hover {
     transform: scale(1.05);
-    background: linear-gradient(135deg, var(--sfhs-gold), var(--sfhs-light-blue));
+    background: linear-gradient(135deg, var(--sfhs-navy), var(--sfhs-light-navy));
 }
 
 /* Button Styles - More vibrant and friendly */
@@ -195,52 +194,52 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--sfhs-blue) 0%, var(--sfhs-light-blue) 100%) !important;
-    border-color: var(--sfhs-blue) !important;
+    background: linear-gradient(135deg, var(--sfhs-navy) 0%, var(--sfhs-light-navy) 100%) !important;
+    border-color: var(--sfhs-navy) !important;
     color: var(--sfhs-white) !important;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--sfhs-gold) 0%, var(--sfhs-light-gold) 100%) !important;
-    border-color: var(--sfhs-gold) !important;
-    color: var(--sfhs-dark-text) !important;
+    background: linear-gradient(135deg, var(--sfhs-white) 0%, var(--sfhs-light-blue) 100%) !important;
+    border-color: var(--sfhs-navy) !important;
+    color: var(--sfhs-navy) !important;
     transform: translateY(-3px) scale(1.05) !important;
-    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4) !important;
+    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.4) !important;
 }
 
 .btn-outline-primary {
     background: transparent !important;
-    border-color: var(--sfhs-gold) !important;
-    color: var(--sfhs-gold) !important;
+    border-color: var(--sfhs-navy) !important;
+    color: var(--sfhs-navy) !important;
 }
 
 .btn-outline-primary:hover {
-    background: var(--sfhs-gold) !important;
-    color: var(--sfhs-dark-text) !important;
+    background: var(--sfhs-navy) !important;
+    color: var(--sfhs-white) !important;
     transform: translateY(-2px) !important;
-    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3) !important;
+    box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3) !important;
 }
 
 .btn-secondary {
-    background: linear-gradient(135deg, var(--sfhs-gold) 0%, var(--sfhs-light-gold) 100%) !important;
-    border-color: var(--sfhs-gold) !important;
-    color: var(--sfhs-dark-text) !important;
+    background: linear-gradient(135deg, var(--sfhs-light-navy) 0%, var(--sfhs-navy) 100%) !important;
+    border-color: var(--sfhs-navy) !important;
+    color: var(--sfhs-white) !important;
 }
 
 /* Disclaimer Box */
 .disclaimer {
-    background: linear-gradient(135deg, #fee2e2 0%, #fef3c7 100%);
-    border: 2px solid #fbbf24;
+    background: linear-gradient(135deg, var(--sfhs-light-blue) 0%, var(--sfhs-white) 100%);
+    border: 2px solid var(--sfhs-light-navy);
     border-radius: 15px;
     padding: 20px;
     margin: 30px 0;
     text-align: center;
     font-size: 0.9rem;
-    color: #7c2d12;
+    color: var(--sfhs-dark-text);
 }
 
 .disclaimer .fas {
-    color: #dc2626;
+    color: var(--sfhs-navy);
     font-size: 1.2rem;
 }
 
